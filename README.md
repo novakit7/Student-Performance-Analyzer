@@ -103,7 +103,7 @@ RollNo,Name,Maths,Science,English,Computer
 ## 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/novakit7/Student-Performance-Analyzer.git
 cd Student_Performance_Analyzer
 ```
 
