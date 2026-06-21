@@ -1,54 +1,60 @@
 # 🎓 Student Performance Analyzer
 
-A console-based Python application for analyzing student performance using **Numpy**, **Pandas** and **Matplotlib**.
+A professional Python-based data analysis project that evaluates student academic performance using **Pandas**, **NumPy**, and **Matplotlib**.
 
-The project reads student data from a CSV file, calculates performance metrics, generates reports, and creates visualizations.
+The application reads student records from a CSV file, performs statistical analysis, generates performance reports, and visualizes insights through charts and graphs.
 
 ---
 
-## 🚀 Features
+## ✨ Key Features
 
-### 📊 Data Analysis
+### 📊 Performance Analysis
 
-* Calculate total marks
-* Calculate percentage
-* Calculate average marks
-* Assign grades
-* Rank students
-* Identify toppers and lowest performers
+* Calculate total marks for each student
+* Calculate percentage scores
+* Compute subject-wise averages
+* Assign grades automatically
+* Rank students based on performance
+* Identify toppers and low performers
+* Generate pass/fail statistics
 
-### 📈 Visualizations
+### 📈 Data Visualization
+
+The application automatically generates and saves charts including:
 
 * Subject Average Marks
 * Grade Distribution
-* Marks Histogram
-* Top Students Chart
+* Marks Distribution Histogram
+* Top Students Leaderboard
 * Student Performance Comparison
-* Pass/Fail Statistics
-* Subject Toppers Chart
+* Pass vs Fail Analysis
+* Subject-wise Toppers
 
-### 📄 Reports
+### 📄 Report Generation
 
-* Generate summary report
-* Export processed student data to CSV
-* Save generated charts automatically
+* Generate detailed performance summaries
+* Export processed data to CSV
+* Save visual reports as images
+* View reports directly from the console
 
-### 🖥️ Console Menu
+### 🖥️ Interactive Console Interface
 
-Interactive menu-driven application for easy navigation.
+Simple menu-driven navigation for analysis and visualization.
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```text
-Student_performance_analyser/
+Student_Performance_Analyzer/
 │
 ├── charts/
-│   └── grade_distribution.png
+│   ├── grade_distribution.png
+│   ├── subject_average.png
+│   └── ...
 │
 ├── data/
-│   └── student.csv
+│   └── students.csv
 │
 ├── reports/
 │   └── student_report.csv
@@ -56,9 +62,9 @@ Student_performance_analyser/
 ├── src/
 │   ├── analyzer.py
 │   ├── data_loader.py
-│   ├── main.py
 │   ├── report.py
-│   └── visualizer.py
+│   ├── visualizer.py
+│   └── main.py
 │
 ├── index.py
 ├── requirements.txt
@@ -67,7 +73,7 @@ Student_performance_analyser/
 
 ---
 
-## 📋 Sample Dataset
+# 📋 Sample Dataset
 
 ```csv
 RollNo,Name,Maths,Science,English,Computer
@@ -80,47 +86,66 @@ RollNo,Name,Maths,Science,English,Computer
 
 ---
 
-## ⚙️ Installation
+# 🛠️ Technologies Used
 
-### 1. Clone the Repository
+| Technology | Purpose               |
+| ---------- | --------------------- |
+| Python     | Core Programming      |
+| Pandas     | Data Analysis         |
+| NumPy      | Numerical Computation |
+| Matplotlib | Data Visualization    |
+| CSV        | Data Storage          |
+
+---
+
+# ⚙️ Installation
+
+## 1. Clone the Repository
 
 ```bash
 git clone <repository-url>
-cd Student_performance_analyser
+cd Student_Performance_Analyzer
 ```
 
-### 2. Create Virtual Environment
+## 2. Create a Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-### 3. Activate Virtual Environment
+## 3. Activate the Environment
 
-#### Windows
+### Windows
 
 ```bash
 .venv\Scripts\activate
 ```
 
-#### Linux / macOS
+### Linux/macOS
 
 ```bash
 source .venv/bin/activate
 ```
 
-### 4. Install Dependencies
+## 4. Install Dependencies
 
 ```bash
-pip install pandas matplotlib
+pip install -r requirements.txt
+```
+
+Or install manually:
+
+```bash
+pip install pandas numpy matplotlib
 ```
 
 ---
 
-## ▶️ Running the Project
+# ▶️ Running the Application
 
-Svae your csv to the data folder  to analise  
-Run the application from the project root:
+1. Place your dataset inside the `data/` folder.
+2. Ensure the CSV follows the required format.
+3. Run:
 
 ```bash
 python index.py
@@ -128,11 +153,11 @@ python index.py
 
 ---
 
-## 📊 Console Menu
+# 📋 Console Menu
 
 ```text
 ==================================================
-STUDENT PERFORMANCE ANALYZER
+          STUDENT PERFORMANCE ANALYZER
 ==================================================
 1. View Summary Report
 2. Save Report
@@ -140,54 +165,61 @@ STUDENT PERFORMANCE ANALYZER
 4. Plot Grade Distribution
 5. Plot Marks Histogram
 6. Plot Top Students
-7. Plot Student Performance
+7. Plot Student Performance Comparison
 8. Plot Pass/Fail Statistics
 9. Plot Subject Toppers
-10. Show Dataset
+10. View Dataset
 0. Exit
 ==================================================
 ```
 
 ---
 
-## 📈 Generated Charts
+# 📈 Output
 
-The application automatically saves charts inside the `charts/` folder.
+### Generated Reports
 
-* Subject Average Marks
-* Grade Distribution
-* Marks Histogram
-* Top Students
-* Student Performance
-* Pass vs Fail
-* Subject Toppers
+* Student Rankings
+* Grade Analysis
+* Percentage Calculations
+* Subject-wise Statistics
 
----
+### Generated Charts
 
-## 🛠️ Technologies Used
+All charts are automatically saved inside the `charts/` directory.
 
-* Python
-* Pandas
-* Matplotlib
-* CSV Data Processing
-
----
-
-## 🎯 Learning Outcomes
-
-This project demonstrates:
-
-* Data Cleaning
-* Data Analysis
-* Data Visualization
-* File Handling
-* Modular Python Programming
-* Pandas DataFrame Operations
-* Matplotlib Charting
-* Console-Based Application Development
+```text
+charts/
+├── grade_distribution.png
+├── marks_histogram.png
+├── pass_fail.png
+├── subject_average.png
+└── ...
+```
 
 ---
 
-## 📜 License
+# 🎯 Learning Outcomes
 
-This project is open source and available under the MIT License.
+This project demonstrates practical experience with:
+
+* Data Cleaning and Preprocessing
+* Data Analysis using Pandas
+* Statistical Calculations using NumPy
+* Data Visualization using Matplotlib
+* CSV File Handling
+* Modular Python Development
+* Report Generation
+* Real-World Data Analysis Workflow
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+Developed as a learning project to practice Python, Data Analysis, and Data Visualization concepts.
